@@ -1,0 +1,53 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 가운데 정렬 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  color: #2d3436;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 2rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease;
+  margin-bottom: 2rem;
+}
+
+.card-section {
+  background: #ffffffd9;
+  backdrop-filter: blur(6px);
+  border-radius: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.card-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .card-section {
+    padding: 1.2rem;
+  }
+}
